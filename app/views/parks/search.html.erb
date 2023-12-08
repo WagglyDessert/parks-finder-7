@@ -1,0 +1,8 @@
+<h1>Parks Results</h1>
+<p> Total number of parks: <%= @facade.count%> </p>
+<% @facade.each do |park|%>
+  <p> Name: <%= park.full_name%> </p>
+  <p> Description: <%= park.description%> </p>
+  <p> Direction information: <%= park.direction_info%> </p>
+  <p> Standard hours of operation: <%= park.standard_hours%> </p><br><br><br>
+<% end %>
